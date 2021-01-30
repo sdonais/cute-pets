@@ -13,6 +13,7 @@ import { InMemoriamComponent } from './in-memoriam/in-memoriam.component';
 import { MorePetsComponent } from './more-pets/more-pets.component';
 import { RikuComponent } from './riku/riku.component';
 import { ShayComponent } from './shay/shay.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ShayComponent } from './shay/shay.component';
     InMemoriamComponent,
     MorePetsComponent,
     RikuComponent,
-    ShayComponent
+    ShayComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

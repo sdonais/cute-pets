@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <div class="navbar-brand">Cute Pets</div>
+            <div class="navbar-brand"><a routerLinkActive="active" routerLink="/home">Cute Pets</a></div>
         </div>
         <div class="collapse navbar-collapse"> <!-- may change? -->
             <ul class="nav navbar-nav navbar-right">
@@ -14,12 +14,12 @@
                     <ul class="dropdown-menu">
                         <li><a href="#">Shay</a></li>
                         <li><a href="#">Beachy</a></li>
-                        <li><a href="#">Riku</a></li>
+                        <li><a href="#">Riku</a></li> <!-- FIX this dropdown -->
                     </ul>
                 </li>
-                <li><a href="#">In Memoriam</a></li>
-                <li><a href="#">More Pets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li routerLinkActive="active"><a href="/in-memoriam">In Memoriam</a></li>
+                <li routerLinkActive="active"><a href="/more-pets">More Pets</a></li>
+                <li routerLinkActive="active"><a href="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
