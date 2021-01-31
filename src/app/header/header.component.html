@@ -6,20 +6,20 @@
         <div class="collapse navbar-collapse"> <!-- may change? -->
             <ul class="nav navbar-nav navbar-right">
                 <li routerLinkActive="active"><a routerLink="/ash">Ash</a></li>
-                <li class="dropdown">
-                    <a 
-                        class="dropdown-toggle" 
+                <li class="dropdown" appDropdown>
+                    <a style="cursor: pointer;"
+                        class="btn dropdown-toggle" 
                         role="button"
                     >Kitties <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Shay</a></li>
-                        <li><a href="#">Beachy</a></li>
-                        <li><a href="#">Riku</a></li> <!-- FIX this dropdown -->
+                        <li><a routerLink="/shay">Shay</a></li>
+                        <li><a routerLink="/beachy">Beachy</a></li>
+                        <li><a routerLink="/riku">Riku</a></li> <!-- FIX this dropdown! -->
                     </ul>
                 </li>
-                <li routerLinkActive="active"><a href="/in-memoriam">In Memoriam</a></li>
-                <li routerLinkActive="active"><a href="/more-pets">More Pets</a></li>
-                <li routerLinkActive="active"><a href="/contact">Contact</a></li>
+                <li routerLinkActive="active"><a routerLink="/in-memoriam">In Memoriam</a></li>
+                <li routerLinkActive="active"><a routerLink="/more-pets">More Pets</a></li>
+                <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
