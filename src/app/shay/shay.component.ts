@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-shay',
   templateUrl: './shay.component.html',
-  styleUrls: ['./shay.component.css']
+  styleUrls: ['./shay.component.scss']
 })
 export class ShayComponent implements OnInit {
 
@@ -11,5 +11,13 @@ export class ShayComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  shayInfo = {
+    name: 'name: ',
+    nicknames: 'nicknames: ',
+    age: 'age: ',
+    gender: 'gender: ',
+    favs: 'favorite things: ',
+  };
 
 }
