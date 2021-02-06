@@ -18,6 +18,7 @@ export class BeachyComponent implements OnInit {
     age: 'age: ',
     gender: 'gender: ',
     favs: 'favorite things: ',
+    facts: 'interesting facts about him: '
   };
 
 }

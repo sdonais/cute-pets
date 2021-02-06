@@ -19,6 +19,7 @@ export class AshComponent implements OnInit {
     gender: 'gender: ',
     breed: 'breed: ',
     favs: 'favorite things: ',
+    facts: 'interesting facts about him: '
   };
 
 }
