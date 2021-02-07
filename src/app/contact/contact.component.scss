@@ -1,0 +1,9 @@
+$basic_blue: #3384F3;
+
+h3 {
+    color: $basic_blue;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid indianred;
+}

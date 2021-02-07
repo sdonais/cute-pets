@@ -13,7 +13,7 @@ import { MorePetsComponent } from './more-pets/more-pets.component';
 import { RikuComponent } from './riku/riku.component';
 import { ShayComponent } from './shay/shay.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { DropdownDirective } from './dropdown.directive';
 
 @NgModule({
@@ -32,7 +32,6 @@ import { DropdownDirective } from './dropdown.directive';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule

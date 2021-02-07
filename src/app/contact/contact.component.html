@@ -1,8 +1,53 @@
 <div class="container-fluid">
     <div class="row">
-      <br>    
+      <div class="col-md-7"><h3>Do you...</h3></div>
       <div class="col-md-7">
-        <p>contact works!</p>
+        Have questions? <br>
+        Want to send Ash fan mail? <br>
+        Have a dog that wants to be friends? <br>
+        Want to tell Riku how cute he is? <br><br>
+        Use the form below to get in touch! <br>
+      </div><br><br>
+      <div class="col-md-7">
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input 
+              type="text"
+              id="name"
+              formControlName="name"
+              class="form-control">
+              <span
+                *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched" 
+                class="help-block">Please enter a name!</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input 
+              type="text"
+              id="email"
+              formControlName="email"
+              class="form-control">
+              <span
+              *ngIf="!contactForm.get('email').valid && contactForm.get('email').touched" 
+              class="help-block">Please enter a valid email address!</span>
+          </div>
+          <div class="form-group">
+            <label for="thoughts">Your Thoughts</label>
+            <input 
+              type="text"
+              id="thoughts"
+              formControlName="thoughts"
+              style="height: 137px;"
+              class="form-control">
+              <span
+              *ngIf="!contactForm.get('thoughts').valid && contactForm.get('thoughts').touched" 
+              class="help-block">Please enter some content!</span>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+
       </div>
     </div> 
 </div>
