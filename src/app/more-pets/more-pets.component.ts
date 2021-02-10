@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DoggoService } from './doggo.service';
 
 @Component({
   selector: 'app-more-pets',
@@ -6,10 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./more-pets.component.css']
 })
 export class MorePetsComponent implements OnInit {
+  doggo; 
 
-  constructor() { }
+  constructor(public doggoService: DoggoService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getPic();
   }
 
-}
+  getPic() {
+    this.doggoService.fetchDoggos().subscribe(
+      data => {
+        this.doggo = data;
+      }, 
+      error => {
+        console.log("error");
+      }
+    );
+  } //end function 
+
+} //end class

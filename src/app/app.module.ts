@@ -15,6 +15,7 @@ import { ShayComponent } from './shay/shay.component';
 import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DropdownDirective } from './dropdown.directive';
+import { DoggoService } from './more-pets/doggo.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { DropdownDirective } from './dropdown.directive';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DoggoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
