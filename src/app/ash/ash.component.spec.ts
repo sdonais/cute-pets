@@ -22,4 +22,12 @@ describe('AshComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain Ash in an h3 tag', () => {
+    const fixture = TestBed.createComponent(AshComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain(`Ash`);
+  }); //added
+
 });

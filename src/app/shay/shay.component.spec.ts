@@ -22,4 +22,12 @@ describe('ShayComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain Shay in an h3 tag', () => {
+    const fixture = TestBed.createComponent(ShayComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain(`Shay`);
+  }); //added
+
 });

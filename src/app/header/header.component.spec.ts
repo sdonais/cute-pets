@@ -22,4 +22,15 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should create the header component', () => {
+    expect(component).toBeTruthy();
+  }); //added
+
+  // it(`should have as title 'The Place for Cute Pets!'`, () => {
+  //   const app = fixture.debugElement.componentInstance;
+  //   expect(app.title).toEqual('The Place for Cute Pets!');
+  // }); //added
+  
+
 });
