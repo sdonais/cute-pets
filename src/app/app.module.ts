@@ -16,6 +16,13 @@ import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DropdownDirective } from './dropdown.directive';
 import { DoggoService } from './more-pets/doggo.service';
+import { SnakesComponent } from './snakes/snakes.component';
+import { AriComponent } from './snakes/ari/ari.component';
+import { CookieComponent } from './snakes/cookie/cookie.component';
+import { MykonosComponent } from './snakes/mykonos/mykonos.component';
+import { AureliaComponent } from './snakes/aurelia/aurelia.component';
+import { DevoComponent } from './snakes/devo/devo.component';
+import { SaturnComponent } from './snakes/saturn/saturn.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +36,14 @@ import { DoggoService } from './more-pets/doggo.service';
     RikuComponent,
     ShayComponent,
     HomeComponent,
-    DropdownDirective
+    DropdownDirective,
+    SnakesComponent,
+    AriComponent,
+    CookieComponent,
+    MykonosComponent,
+    AureliaComponent,
+    DevoComponent,
+    SaturnComponent
   ],
   imports: [
     BrowserModule,
