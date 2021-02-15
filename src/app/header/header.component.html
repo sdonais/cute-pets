@@ -1,9 +1,12 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+              <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+            </button>
             <div class="navbar-brand"><a routerLinkActive="active" routerLink="/home">Cute Pets</a></div>
         </div>
-        <div class="collapse navbar-collapse"> <!-- may change? -->
+        <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav navbar-right">
                 <li routerLinkActive="active"><a routerLink="/ash">Ash</a></li>
                 <li class="dropdown" appDropdown>
